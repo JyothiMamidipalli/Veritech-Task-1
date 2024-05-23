@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.header-section {
+  margin-top:50px;
+  margin-bottom: 50px;
+  background-color: blue;
+  width: 250px;
+  height:50px;;
+  border-radius: 10px;
+  color: white;
+}
+
+.content{
+  margin-bottom:20px;
+}
+.info{
+  font-size: x-large;
+}
+.dotted-line {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.dotted-line::after {
+  content: "--------------------------------------------------------------------";
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 700;
+  color: blue;
+  display: inline-block;
+  vertical-align: 3px;
+  padding-left: 30px;
+  padding-bottom: 35px;
+}
+
+.subtitle {
+  margin-top: 5px;
+  margin-bottom:20px;
+  background-color: blue;
+  width: max-content;
+  height: max-content;
+  vertical-align: middle;
+  border-radius: 5px;
+  color: white;
+  padding:10px;
+  font-size:x-large;
+
+}
+
+
+/* Container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header Section */
+
+
+/* Text Centering */
+.text-center {
+  text-align: center;
+}
+
+/* Justify Content Center */
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Team Section */
+.team-section {
+  margin: 50px 0;
+}
+
+.team-section h4 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Team Row */
+.row.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Team Column */
+.col {
+  flex: 1 1 200px;
+  max-width: 200px;
+  margin: 10px;
+}
+
+/* Team Member */
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member .name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.team-member .role {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .col {
+      flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+      flex: 1 1 100%;
+  }
+}
